@@ -1,7 +1,7 @@
 {
 	"intro": {
-		"start": "const Andrew = ( name, passion ) =>",
-		"end": "Hello, my name is",
+		"start": "const Miguelangel = ( profesional, informática, sistemas ) =>",
+		"end": "Hola, mi nombre es",
 		"speed": 60,
 		"deletionSpeed": 80,
 		"wrapper": "h2",
@@ -11,21 +11,21 @@
 	},
 
 	"header": {
-		"name": "Andrew Nelson.",
-		"usp": "I design and build meaningful experiences."
+		"name": "Miguelangel Garay.",
+		"usp": "Diseño y desarrollo experiencias con proposito"
 	},
 
-	"paragraph": "I am a digital polymath — a constantly evolving digital creator driven by a passion for lifelong learning and the desire to leave a lasting impact.",
+	"paragraph": "Soy un profesional en Ingenieria Informática y de Sistemas, con la consigna de cambiar al mundo una solución innovadora a la vez.",
 
 	"buttons": {
 		"primary": {
-			"title": "Contact Me",
-			"url": "",
+			"title": "Contáctame",
+			"url": "mailto:miguelangelcdm@gmail.com",
 			"leaveSite": false
 		},
 		"secondary": {
 			"title": "LinkedIn",
-			"url": "",
+			"url": "https://www.linkedin.com/in/miguelangel-garay-b15178195/",
 			"leaveSite": "true"
 		}
 	}

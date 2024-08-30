@@ -63,6 +63,11 @@
 		gap: 1rem;
 	}
 
+	.clients {
+		margin-left: 1rem;
+		list-style-type: disc;
+	}
+
 	.position {
 		margin-left: calc( var(--grid-32) * 2 );
 		background: var(--background-dim);

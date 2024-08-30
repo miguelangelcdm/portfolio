@@ -1,24 +1,14 @@
 {
 	"acknowledgments": [
-		{ 
-			"person": "Jihad Hassan - Marketing Director",
+		{
+			"person": "Jose Gaspard - CEO/Fundador",
 			"link": "",
-			"note": "Thank you for all the advice and feedback."
+			"note": "\"Miguel es probablemente una de las personas con las que mejor experiencia de trabajo he tenido. Lo contraté como desarrollador Front-end en mi empresa y sobrepasó mis expectativas sin lugar a dudas. Es, además de una persona muy talentosa en lo que hace, alguien que encuentra mejoras en cada proyecto que se le asigna. Lidera muy bien equipos de trabajo y sabe manejar reuniones con clientes. Muy responsable, talentoso y un gran ser humano. Realmente recomiendo trabajar con Miguel ya que harán que su empresa cuente con un verdadero talento.\""
 		},
 		{ 
-			"person": "Colorpong - Artist",
-			"link": "ttps://www.youworkforthem.com/designer/536/colorpong?aff=1115",
-			"note": "Checkout their amazing vector illustrations."
-		},
-		{ 
-			"person": "Brittany Chiang - Software Engineer",
-			"link": "https://brittanychiang.com/",
-			"note": "A major inspiration to create an open source theme."
-		},
-		{ 
-			"person": "Vercel - Platform",
-			"link": "https://vercel.com/docs",
-			"note": "Host your own Next.js project for free!"
+			"person": "Andres Medina - Coordinador Nacional Cruz Roja Peruana",
+			"link": "https://www.linkedin.com/in/andres-medinacarrillo/",
+			"note": ""
 		}
 	],
 
@@ -32,19 +22,11 @@
 
 	"social": [
 		{
-			"url": "https://medium.com/@--andrewnelson",
-			"icon": "medium"
-		},
-		{
-			"url": "https://dev.to/andrewnelson",
-			"icon": "dev"
-		},
-		{
-			"url": "https://www.linkedin.com/in/--andrewnelson/",
+			"url": "https://www.linkedin.com/in/miguelangel-garay-b15178195/",
 			"icon": "linkedin"
 		},
 		{
-			"url": "https://github.com/atlamors",
+			"url": "https://github.com/miguelangelcdm",
 			"icon": "github"
 		}
 	]

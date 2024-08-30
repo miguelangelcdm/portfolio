@@ -28,31 +28,31 @@ export default function About() {
 		<Section classProp={about.section}>	
 			<Container spacing={['verticalXXXLrg']}>
 				<SectionTitle
-					title="About Me"
+					title="Acerca de mí"
 					preTitle="Synopsis"
-					subTitle="With a diverse skill set that includes UX design, UI design, full stack development, operational architecture, systems design, photography, and branding, I am a well-rounded digital professional."
+					subTitle="Con un conjunto de habilidades que abarca desde UX&UI, desarrollo full stack, arquitecturas, diseño de sistemas, y gestión de proyectos, soy un profesional digital completo."
 				/>
 				<section className={about.content}>
 					<div className={about.image}>
-						<img src="/img/family-photo.jpg" alt="Nelson family photo"/>
+						<img src="/img/IMG_2110.jpeg" alt="myself"/>
 						{/* <Image src="/img/family-photo.jpg" width={600} height={800}/> */}
 					</div>
 					<div className={about.copy} >
 						<CopyBlock 
-							title="Softskills that pay the bills"
+							title="Habilidades blandas que pagan cuentas"
 							containerClass={about.container}
 							iconClass={about.icon}
 							icon={[ 'fat', 'ear-listen' ]}
-							copy="In addition to my design and technical expertise—I also have strong leadership, time management, and multitasking skills—honed through my experience as a business owner / managing partner, husband, and father of two. Outside of work, I enjoy staying active through sports such as hockey and snowboarding. I am confident in my ability to bring passion and value to any project."
+							copy="Además de mi experiencia en diseño y desarrollo, también tengo fuertes habilidades de liderazgo, gestión del tiempo y multitarea, perfeccionadas a través de mi experiencia como freelance, fundador de un club estudiantil y voluntario. Fuera del trabajo, disfruto manteniéndome activo ejercitando en el gimnasio y deportes como el futbol. Estoy seguro de mi capacidad para aportar pasión y valor a cualquier proyecto."
 						/>
 						<BadgesBlock 
-							title="Reasearch and planning" 
+							title="Si no sé como hacer algo, no me detengo hasta saberlo" 
 							containerClass={about.container}
 							list={methods} 
 							fullContainer="fullContainer"
 							block="methods" 
 							icon="fingerprint"
-							copy="One of my favorite aspects of creating is planning the architecture of a project. From Design Systems to Brand Strategy—I enjoy working with the many touch points of user experience."
+							copy="Uno de mis aspectos favoritos de la creación es planificar la arquitectura de un proyecto. Desde sistemas de diseño hasta estrategias de marca, disfruto trabajando con los diversos puntos de contacto de la experiencia del usuario."
 							//invertedColor="invertedColor"
 							headerIcon={`${about.icon}`}
 						/>
@@ -64,10 +64,10 @@ export default function About() {
 }
 
 const methods 	= [
-	{ key: 'planet-moon', 		name: 'User Research', 		type: 'fad' },
-	{ key: 'qrcode', 			name: 'Digital Strategy', 	type: 'fad' },
-	{ key: 'window', 			name: 'Design Systems', 	type: 'fad' },
-	{ key: 'cubes', 			name: 'Product Strategy', 	type: 'far' },
-	{ key: 'layer-plus', 		name: 'Brand Strategy', 	type: 'fad' },
-	{ key: 'solar-system', 		name: 'Operations', 		type: 'fad' },
+	{ key: 'planet-moon', 		name: 'Investigación', 		type: 'fad' },
+	{ key: 'qrcode', 			name: 'Estrategias digitales', 	type: 'fad' },
+	{ key: 'window', 			name: 'Diseño de sistemas', 	type: 'fad' },
+	{ key: 'cubes', 			name: 'Lenguajes de programación', 	type: 'far' },
+	{ key: 'layer-plus', 		name: 'Generar oportunidades', 	type: 'fad' },
+	{ key: 'solar-system', 		name: 'Team player', 		type: 'fad' },
 ]

@@ -24,21 +24,64 @@ export default function Career() {
 		<Section classProp={`${career.section} borderBottom`}>
 			<Container spacing={['verticalXXXLrg']}>
 				<SectionTitle
-					title="Experience"
-					preTitle="Career"
-					subTitle="I am current managing, designing, and developing all consumer and digital product initiatives at My Supply Co."
+					title="Experiencia"
+					preTitle="Carrera"
+					subTitle="Actualmente me desempeño como desarrollador freelance"
 				/>
 				<section className={career.area}>
 					<article className={career.company}>
 						<div className={career.companyContent}>
 							<span className={career.companyHeader}>
-								<h3>My Supply Co.</h3>
-								<h4>Permanent Full-time</h4>
-								<h4>Apr 2019 - Present · 3 yrs 10 mos</h4>
-								<h5>Vancouver, British Columbia, Canada</h5>
+								<h3>Freelance</h3>
+								<h4>Permanente Full-time</h4>
+								<h4>Abr 2022 - Presente · 2 yrs 4 meses</h4>
+								<h5>Lima, Perú</h5>
 							</span>
 							<p>
-							My Supply Co. helps Canadians manage mental and physical health with naturally occurring nootropic and adaptogenic products. They carry products with complex attributes, aiming to solve a large variety of personal care needs — this requires an extremely customized and evolving approach to how the store is built and functions.
+							Desarrollo de aplicaciones web utilizando tecnologías como Laravel, tailwind, Livewire, Alpine.js, entre otras. Ademas del uso y configuración de CMS como wordpress para gestión de contenido.<br/>
+							</p>
+							<h4>Clientes:</h4>
+							<ul className={career.list}>
+									<li>
+										<span className={career.subList}><span className={career.bullet}></span>Cardiocentro Rebaggliatti</span>
+									</li>
+									<li>
+										<span className={career.subList}><span className={career.bullet}></span>Arlem Tec</span>
+									</li>
+									<li>
+										<span className={career.subList}><span className={career.bullet}></span>Rafael Zavala</span>
+									</li>
+									<li>
+										<span className={career.subList}><span className={career.bullet}></span>LG</span>
+									</li>
+							</ul>
+						</div>
+						<div className={career.companyAlt}></div>
+					</article>
+					<article className={career.company}>
+						<div className={career.companyContent}>
+						<span className={career.companyHeader}>
+								<h3>Nebulab</h3>
+								<h4>Full-time</h4>
+								<h4>Feb 2024 - Jul 2024 · 6 mese</h4>
+								<h5>Lima, Perú</h5>
+							</span>
+							<p>
+							Desarrollo de aplicaciones web utilizando tecnologías como Laravel, tailwind, Livewire, Alpine.js, entre otras. Ademas del uso y configuración de CMS como wordpress para gestión de contenido.<br/>
+							</p>
+						</div>
+						<div className={career.companyAlt}></div>
+					</article>
+					<article className={career.company}>
+						<div className={career.companyContent}>
+							<span className={career.companyHeader}>
+								<h3>Cruz Roja Peruana</h3>
+								<h4>Voluntariado Full-time</h4>
+								<h4>Nov 2022 - Feb 2024 · 6 meses</h4>
+								<h5>Lima, Perú</h5>
+							</span>
+							<p>
+							Desarrollo y liderazgo del proyecto: <strong>Sistema Nacional de Gestión de Voluntariado para la Cruz Roja Peruana</strong>
 							</p>
 						</div>
 						<div className={career.companyAlt}></div>
@@ -48,12 +91,25 @@ export default function Career() {
 						<div className={career.position}>
 							<div className={career.positionContent}>
 								<span class={career.positionHeader}>
-									<h3>Director of Product Design and Development</h3>
-									<h4>Nov 2021 - Present · 1 yrs 3 mos</h4>
+									<h3>Monitor de Técnologias de Información</h3>
+									<h4>May 2023 - Feb 2024 · 10 meses</h4>
 								</span>
 								<p>
-								I am responsible for the ideation, planning, and development of new consumer goods—and customer and employee facing microservice software. During these projects I work with key stakeholders within our company and supplychain to ensure and meet quality goals across multiple domains.
+								Buscamos seguir iterando el Sistema de Gestión de Voluntariado Nacional, desarrollando nuevas características, documentando el proceso y asegurando un plan de calidad para el sostenido uso del software.<br/>
+								Adicionalmente busco, promover iniciativas y soporte de TI para el beneficio y alineamiento de objetivos de la CRP dentro del equipo de voluntarios estudiantes de carreras de ingeniería de software y sistemas de la Universidad San Ignacio de Loyola que además ayuden en su formación profesional.
 								</p>
+								<ul className={career.list}>
+									<li>
+										<span className={career.subList}><span className={career.bullet}></span>Presentación de la primera version estable del sistema</span>
+									</li>
+									<li>
+										<span className={career.subList}><span className={career.bullet}></span>Primer despliegue a producción</span>
+									</li>
+									<li>
+										<span className={career.subList}><span className={career.bullet}></span>Inicio de pruebas de llenado de datos</span>
+									</li>
+								</ul>
+								<Badges list={crpstack} block="stack" fullContainer="fullContainer"/>
 							</div>
 							<div className={career.positionAlt}></div>
 						</div>
@@ -61,96 +117,30 @@ export default function Career() {
 						<div className={career.position}>
 							<div className={career.positionContent}>
 								<span class={career.positionHeader}>
-									<h3>Full Stack Developer & User Experience Designer</h3>
-									<h4>Feb 2020 - Nov 2021 · 1 yrs 10 mos</h4>
+									<h3>Desarrollador Full Stack</h3>
+									<h4>Nov 2022 - Abr 2023 · 6 meses</h4>
 								</span>
 								<p>
-								As the lead full stack developer I am responsible for all software development, CI/CD, and QA. This is for the front end, APIs, and the back end. Additionally I was tasked with identifying and analyzing weak points in the customer journey and employee workflows. Each project had to be estimated and prioritized based on its workload and immediate impact to efficiency or revenue. Some of these projects have been so successful internally that we have planned refactoring for commercialization. 
-								</p>
-								<p>
-								Some key projects complete during this time 👇
+								Parte del equipo operativo encargado del desarrollo del Sistema Nacional de Gestión de Voluntarios de la Cruz Roja Peruana
 								</p>
 								<ul className={career.list}>
 									<li>
-										Product attribute and settings automated testing
-										<span className={career.subList}><span className={career.bullet}></span>Eradicated critical data input errors</span>
+										<span className={career.subList}><span className={career.bullet}></span>Experiencia en desarrollo .NET</span>
 									</li>
 									<li>
-										Inventory management reporting and automation 
-										<span className={career.subList}><span className={career.bullet}></span>Decreased purchasing labour by ~80%</span>
+										<span className={career.subList}><span className={career.bullet}></span>Planificación de actividades, tiempos y levantamiento de información</span>
 									</li>
 									<li>
-										Sales management plugin with AJAX shopping cart integration
-										<span className={career.subList}><span className={career.bullet}></span>Increased AOV by 8.3%</span>
+										<span className={career.subList}><span className={career.bullet}></span>Desarrollo de UX y UI.</span>
 									</li>
 									<li>
-										Bespoke ID verification software and WooCommerce integration
-										<span className={career.subList}><span className={career.bullet}></span>Decreased Credit Card fraud by 98%</span>
+										<span className={career.subList}><span className={career.bullet}></span>Redacción de documentación: requerimientos funcionales y no funcionales, historias de usuario, diccionario de datos</span>
 									</li>
 								</ul>
-								<Badges list={fullStack} block="stack" fullContainer="fullContainer"/>
+								<Badges list={crpstack} block="stack" fullContainer="fullContainer"/>
 							</div>
 							<div className={career.positionAlt}></div>
 						</div>
-					
-						<div className={career.position}>
-							<div className={career.positionContent}>
-									<span class={career.positionHeader}>
-										<h3>Front End Developer & User Interface Designer</h3>
-										<h4>Apr 2019 - Feb 2020 · 11 mos</h4>
-									</span>
-								<p>
-									I was brought on to help fill multiple creative rolls in a small start-up environment. Working with the marketing team to create the brand and logos — designing and developing a new front end for the website — and improving the users experience and store KPIs through design and merchandising optimizations.
-								</p>
-								<p>
-									Some key projects completed during this time 👇
-								</p>
-								<ul className={career.list}>
-									<li>
-										Full functionality interactive shopping cart to replace cart page
-										<span className={career.subList}><span className={career.bullet}></span>Increased conversions by 0.7%</span>
-									</li>
-									<li>Complex multi-state animated menus represented in an elegant UI 
-										<span className={career.subList}><span className={career.bullet}></span>Strong brand confidence booster with state of the art menu</span>
-									</li>
-									<li>
-										Design and development of the site and merchandising strategy optimized for market
-										<span className={career.subList}><span className={career.bullet}></span>7.1% overall conversion rate </span>
-									</li>
-								</ul>
-								<Badges list={stack} block="stack" fullContainer="fullContainer"/>
-							</div>
-							<div className={career.positionAlt}></div>
-						</div>
-					</article>
-
-					<article className={career.company}>
-						<div className={career.companyContent}>
-							<span className={career.companyHeader}>
-								<h3>Another Creative Ltd.</h3>
-								<h4>Contract Part-time</h4>
-								<h4>Jun 2016 - Present · 6 yrs 8 mos</h4>
-								<h5>Vancouver, British Columbia, Canada</h5>
-							</span>
-							<p>
-							Another Creative is a full stack agency that helps deliver exceptional digital experiences to small and medium businesses. Branding, Marketing, and Web/Software Development.
-							</p>
-						</div>
-						<div className={career.companyAlt}></div>
-					</article>
-
-					<article className={career.company}>
-						<div className={career.companyContent}>
-							<span className={career.companyHeader}>
-								<h3>West Coast Electronics</h3>
-								<h4>Permanent Full-time</h4>
-								<h4>Jan 2006 - Nov 2011 · 5 yrs 11 mos</h4>
-								<h5>Vancouver, British Columbia, Canada</h5>
-							</span>
-							<p>I was the Electronics Wizard 🧙‍♂️</p>
-							<p>West Coast Electronics was a repair shop that fixed computers, consoles, and cell phones.</p>
-						</div>
-						<div className={career.companyAlt}></div>
 					</article>
 				</section>
 			</Container>
@@ -188,4 +178,17 @@ const stack	= [
 	{ key: 'git', 			name: 'Git', 				type: 'devicon' },
 	{ key: 'mysql', 		name: 'MySQL', 				type: 'devicon' },
 	{ key: 'mongodb', 		name: 'MongoDB', 			type: 'devicon' },
+]
+
+const crpstack = [
+	{ "key": "javascript", 			"name": "JavaScript", 	"type": "devicon" },
+	{ "key": "html5",				"name": "HTML5", 		"type": "devicon" },
+	{ "key": "css3",				"name": "CSS3", 		"type": "devicon" },
+	{ "key": "git",					"name": "Git(Hub)", 	"type": "devicon" },
+	{ "key": "csharp",				"name":	"C#",			"type":	"devicon" },
+	{ "key": "dotnetcore",			"name": ".NET 6",		"type": "devicon" },
+	{ "key": "bootstrap",			"name": "Bootstrap",	"type": "devicon" },
+	{ "key": "jquery",				"name": "jQuery",		"type": "devicon" },
+	{ "key": "mysql",				"name": "MySQL",		"type": "devicon" },
+	{ "key": "microsoftsqlserver", 	"name": "SQL Server",	"type": "devicon" }
 ]

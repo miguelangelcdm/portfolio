@@ -1,53 +1,120 @@
 [
 	{
-		"project": "My Supply Co.",
-		"url": "https://mysupplyco.com",
-		"repo": "Private",
-		"descriptionTitle": "D2C & B2B ecommerce site and blog",
-		"description": "with elegant solutions for a complex codebase and customer journey.",
+		"project": "Sistema Nacional de Gestión de Voluntariado",
+		"url":"",
+		"repo":"Private",
+		"descriptionTitle":"Sistema de gestión de recursos para la Cruz Roja Peruana",
+		"description":"Sistema desarrollado con .NET 6, impulso la transformación digital de la organización.",
 		"imageOptions": [
+			{"key":"size",	"value":"large"}
 		],
 		"images": [
-			{ "key": "mock-stack",	"hover": "right", 	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/03.png" },
-			{ "key": "mock-stack",	"hover": "right",	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/02.png" },
-			{ "key": "mock-stack",	"hover": "left",	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/01.png" }
+			{ "key": "portfolio", "hover": "left", "h": "1068", "w": "950",  "url": "/img/CRP1.png" }
 		],
 		"stack": [
-			{ "key": "php", 		"name": "PHP", 			"type": "devicon" },
-			{ "key": "mysql", 		"name": "mySQL", 		"type": "devicon" },
-			{ "key": "javascript", 	"name": "JavaScript", 	"type": "devicon" },
-			{ "key": "jquery", 		"name": "jQuery", 		"type": "devicon" },
-			{ "key": "woocommerce", "name": "WooCommerce", 	"type": "devicon" },
-			{ "key": "wordpress",	"name": "Wordpress", 	"type": "devicon" },
-			{ "key": "html5",		"name": "HTML5", 		"type": "devicon" },
-			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" },
-			{ "key": "sass",		"name": "SCSS", 		"type": "devicon" },
-			{ "key": "git",			"name": "Git(Hub)", 	"type": "devicon" },
-			{ "key": "google",		"name": "GA4/GTM/EEC", 	"type": "devicon" }
+			{ "key": "javascript", 			"name": "JavaScript", 	"type": "devicon" },
+			{ "key": "html5",				"name": "HTML5", 		"type": "devicon" },
+			{ "key": "css3",				"name": "CSS3", 		"type": "devicon" },
+			{ "key": "git",					"name": "Git(Hub)", 	"type": "devicon" },
+			{ "key": "csharp",				"name":	"C#",			"type":	"devicon" },
+			{ "key": "dotnetcore",			"name": ".NET 6",		"type": "devicon" },
+			{ "key": "bootstrap",			"name": "Bootstrap",	"type": "devicon" },
+			{ "key": "jquery",				"name": "jQuery",		"type": "devicon" },
+			{ "key": "mysql",				"name": "MySQL",		"type": "devicon" },
+			{ "key": "microsoftsqlserver", 	"name": "SQL Server",	"type": "devicon" }
 		]
 	},
 	{
-		"project": "andrewnelson.net",
-		"url": "https://github.com/atlamors/portfolio",
-		"repo": "Public",
-		"descriptionTitle": "An open source portfolio",
-		"description": "built on Next.js and React. A fast and agile MERN stack single page application.",
+		"project": "Poket.me",
+		"url":"https://poket.me/",
+		"repo":"Private",
+		"descriptionTitle":"Web App para gestión de contenido a traves de URL",
+		"description":"Aplicación desarrollada con el stack TALL, diseñada para mejorar la visibilidad de marcas gestionando contenido de forma práctica a través de múltiples perfiles.",
 		"imageOptions": [
-			{ "key": "size", 		"value": "large" }
+			{"key":"size",	"value":"large"}
 		],
 		"images": [
-			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/portfolio-mock_single.png" }
+			{ "key": "portfolio", "hover": "left", "h": "710", "w": "358",  "url": "/img/poketme.gif" }
 		],
 		"stack": [
-			{ "key": "nextjs", 		"name": "Next.js", 		"type": "devicon" },
-			{ "key": "react", 		"name": "React", 		"type": "devicon" },
-			{ "key": "nodejs", 		"name": "Node.js", 		"type": "devicon" },
-			{ "key": "mongodb", 	"name": "MongoDB", 		"type": "devicon" },
+			{ "key": "tailwindcss", "name": "Tailwind CSS", "type": "devicon" },
+			{ "key": "alpinejs",    "name": "Alpine.js",    "type": "devicon" },
+			{ "key": "php", 		"name": "PHP", 			"type": "devicon" },
 			{ "key": "javascript", 	"name": "JavaScript", 	"type": "devicon" },
-			{ "key": "html5",		"name": "HTML5", 		"type": "devicon" },
-			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" },
-			{ "key": "sass",		"name": "SCSS", 		"type": "devicon" },
-			{ "key": "git",			"name": "Git(Hub)", 	"type": "devicon" }
+			{ "key": "alpinejs", 	"name": "Alpine.js", 	"type": "devicon" },
+			{ "key": "laravel",     "name": "Laravel",      "type": "devicon" },
+			{ "key": "livewire",    "name": "Livewire",     "type": "devicon" },
+			{ "key": "mysql",       "name": "MySQL",        "type": "devicon" },
+			{ "key": "git",			"name": "Git(Hub)", 	"type": "devicon" },
+			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" }
+		]
+	},
+	{
+		"project": "Experiencias LG",
+		"url":"https://experienciaslg.com.pe/",
+		"repo":"Private",
+		"descriptionTitle":"Web App para gestión de contenido",
+		"description":"Blog autoadministrable desarrollado con el stack TALL, para gestionar el contenido de la marca LG.",
+		"imageOptions": [
+			{"key":"size",	"value":"large"}
+		],
+		"images": [
+			{ "key": "portfolio", "hover": "left", "h": "966", "w": "474",  "url": "/img/mock-lg.png" }
+		],
+		"stack": [
+			{ "key": "tailwindcss", "name": "Tailwind CSS", "type": "devicon" },
+			{ "key": "alpinejs",    "name": "Alpine.js",    "type": "devicon" },
+			{ "key": "php", 		"name": "PHP", 			"type": "devicon" },
+			{ "key": "javascript", 	"name": "JavaScript", 	"type": "devicon" },
+			{ "key": "alpinejs", 	"name": "Alpine.js", 	"type": "devicon" },
+			{ "key": "laravel",     "name": "Laravel",      "type": "devicon" },
+			{ "key": "livewire",    "name": "Livewire",     "type": "devicon" },
+			{ "key": "mysql",       "name": "MySQL",        "type": "devicon" },
+			{ "key": "git",			"name": "Git(Hub)", 	"type": "devicon" },
+			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" }
+		]
+	},
+	{
+		"project": "Hotel Girasoles",
+		"url":"https://losgirasoleshotel.com/",
+		"repo":"Private",
+		"descriptionTitle":"Web App para gestión de contenido",
+		"description":"Blog autoadministrable bilingüe desarrollado con el stack TALL, para gestionar el contenido del negocio.",
+		"imageOptions": [
+			{"key":"size",	"value":"large"}
+		],
+		"images": [
+			{ "key": "portfolio", "hover": "left", "h": "966", "w": "474",  "url": "/img/mock-girasoles.png" }
+		],
+		"stack": [
+			{ "key": "tailwindcss", "name": "Tailwind CSS", "type": "devicon" },
+			{ "key": "alpinejs",    "name": "Alpine.js",    "type": "devicon" },
+			{ "key": "php", 		"name": "PHP", 			"type": "devicon" },
+			{ "key": "javascript", 	"name": "JavaScript", 	"type": "devicon" },
+			{ "key": "alpinejs", 	"name": "Alpine.js", 	"type": "devicon" },
+			{ "key": "laravel",     "name": "Laravel",      "type": "devicon" },
+			{ "key": "livewire",    "name": "Livewire",     "type": "devicon" },
+			{ "key": "mysql",       "name": "MySQL",        "type": "devicon" },
+			{ "key": "git",			"name": "Git(Hub)", 	"type": "devicon" },
+			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" }
+		]
+	},
+	{
+		"project": "Cursos Rafael Zavala",
+		"url":"https://cursosrafaelzavala.com/",
+		"repo":"Private",
+		"descriptionTitle":"Sistema Web de Cursos",
+		"description":"Aplicacion web autoadministrable para la gestión de cursos y material educativo.",
+		"imageOptions": [
+			{"key":"size",	"value":"large"}
+		],
+		"images": [
+			{ "key": "portfolio", "hover": "left", "h": "966", "w": "474",  "url": "/img/mock-zavala.png" }
+		],
+		"stack": [
+			{ "key": "wordpress",    "name": "Wordpress",    "type": "devicon" },
+			{ "key": "php", 		"name": "PHP", 			"type": "devicon" },
+			{ "key": "javascript", 	"name": "JavaScript", 	"type": "devicon" }
 		]
 	}
 ]
