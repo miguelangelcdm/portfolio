@@ -38,7 +38,7 @@ export default function Career() {
 								<h5>Lima, Perú</h5>
 							</span>
 							<p>
-							Desarrollo de aplicaciones web utilizando tecnologías como Laravel, tailwind, Livewire, Alpine.js, entre otras. Ademas del uso y configuración de CMS como wordpress para gestión de contenido.<br/>
+							Desarrollo de aplicaciones web utilizando tecnologías como Laravel, Tailwind, Livewire, Alpine.js, entre otras. Además del uso y configuración de CMS como Wordpress para gestión de contenido.<br/>
 							</p>
 							<h4>Clientes:</h4>
 							<ul className={career.list}>
@@ -63,11 +63,11 @@ export default function Career() {
 						<span className={career.companyHeader}>
 								<h3>Nebulab</h3>
 								<h4>Full-time</h4>
-								<h4>Feb 2024 - Jul 2024 · 6 mese</h4>
+								<h4>Feb 2024 - Jul 2024 · 6 meses</h4>
 								<h5>Lima, Perú</h5>
 							</span>
 							<p>
-							Desarrollo de aplicaciones web utilizando tecnologías como Laravel, tailwind, Livewire, Alpine.js, entre otras. Ademas del uso y configuración de CMS como wordpress para gestión de contenido.<br/>
+							Desarrollo de aplicaciones web utilizando tecnologías como Laravel, Tailwind, Livewire, Alpine.js, entre otras. Además realice el mantenimiento de aplicaciones en React.js y Vue.js.<br/>
 							</p>
 						</div>
 						<div className={career.companyAlt}></div>
@@ -91,12 +91,12 @@ export default function Career() {
 						<div className={career.position}>
 							<div className={career.positionContent}>
 								<span class={career.positionHeader}>
-									<h3>Monitor de Técnologias de Información</h3>
+									<h3>Monitor de Tecnologías de Información</h3>
 									<h4>May 2023 - Feb 2024 · 10 meses</h4>
 								</span>
 								<p>
 								Buscamos seguir iterando el Sistema de Gestión de Voluntariado Nacional, desarrollando nuevas características, documentando el proceso y asegurando un plan de calidad para el sostenido uso del software.<br/>
-								Adicionalmente busco, promover iniciativas y soporte de TI para el beneficio y alineamiento de objetivos de la CRP dentro del equipo de voluntarios estudiantes de carreras de ingeniería de software y sistemas de la Universidad San Ignacio de Loyola que además ayuden en su formación profesional.
+								Adicionalmente busco, promover iniciativas y soporte de TI para el beneficio y alineamiento de objetivos de la CRP dentro del equipo de voluntarios estudiantes de carreras de Ingeniería de Software y Sistemas de la Universidad San Ignacio de Loyola que además ayuden en su formación profesional.
 								</p>
 								<ul className={career.list}>
 									<li>
@@ -121,7 +121,7 @@ export default function Career() {
 									<h4>Nov 2022 - Abr 2023 · 6 meses</h4>
 								</span>
 								<p>
-								Parte del equipo operativo encargado del desarrollo del Sistema Nacional de Gestión de Voluntarios de la Cruz Roja Peruana
+								Parte del equipo operativo encargado del desarrollo del Sistema Nacional de Gestión de Voluntarios de la Cruz Roja Peruana.
 								</p>
 								<ul className={career.list}>
 									<li>
@@ -131,7 +131,7 @@ export default function Career() {
 										<span className={career.subList}><span className={career.bullet}></span>Planificación de actividades, tiempos y levantamiento de información</span>
 									</li>
 									<li>
-										<span className={career.subList}><span className={career.bullet}></span>Desarrollo de UX y UI.</span>
+										<span className={career.subList}><span className={career.bullet}></span>Desarrollo de UX y UI</span>
 									</li>
 									<li>
 										<span className={career.subList}><span className={career.bullet}></span>Redacción de documentación: requerimientos funcionales y no funcionales, historias de usuario, diccionario de datos</span>

@@ -42,7 +42,7 @@ export default function Technical() {
 							containerClass={about.container}
 						/>
 						<BadgesBlock 
-							title="Software de mi dia a dia" 
+							title="Software de mi día a día" 
 							copy="Con más de 2 años de experiencia, tengo un conocimiento profundo e intuitivo de como funcionan las cosas en este mundo de desarrollo y gestión de proyectos. Estos son algunos de los programas que he utilizado a lo largo de este tiempo."
 							list={software}
 							block="software" 
@@ -53,8 +53,8 @@ export default function Technical() {
 						/>
 						<BadgesBlock 
 							title="En busca de problemas que el resto prefiere evitar" 
-							copy="Me encanta buscar soluciones a través de código. Desde el front end hasta el back end y las API en medio. Estoy en busca de retos I deeply enjoy solving problems through code. From the front end all the way to the back end and the APIs in-between."
-							list={tech} 
+							copy="Me encanta buscar soluciones a través de código. Desde el front end hasta el back end y las API en medio. Estoy en busca de retos."
+							list={tech}
 							block="tech"
 							fullContainer="fullContainer" 
 							icon="laptop-code"

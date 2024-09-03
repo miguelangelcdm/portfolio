@@ -26,8 +26,8 @@ export default function Looking() {
 				<h4>Estoy disponible para nuevos retos</h4>
 				<h2 className={looking.json}>Junior : &#123;</h2>
 				<h2 className={looking.jsonSub}><span className={looking.highlight}>Front End Dev</span>,</h2>
-				<h2 className={looking.jsonSub}><span className={looking.highlight2}>Fullstack Dev</span></h2>
-				<h2 className={looking.jsonSub}><span className={looking.highlight2}>Gestor de proyectos</span></h2>
+				<h2 className={looking.jsonSub}><span className={looking.highlight2}>Fullstack Dev,</span></h2>
+				<h2 className={looking.jsonSub}><span className={looking.highlight2}>Gestor de proyectos,</span></h2>
 				<h2 className={looking.jsonSub}><span className={looking.highlight2}>Analista de TI</span></h2>
 				<h2 className={looking.json}>&#125;</h2>
 				<h4>Estoy especialmente interesado en puestos orientados a productos donde pueda contribuir a generar un impacto a nivel de toda la organización.</h4>

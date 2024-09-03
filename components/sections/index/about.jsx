@@ -29,8 +29,8 @@ export default function About() {
 			<Container spacing={['verticalXXXLrg']}>
 				<SectionTitle
 					title="Acerca de mí"
-					preTitle="Synopsis"
-					subTitle="Con un conjunto de habilidades que abarca desde UX&UI, desarrollo full stack, arquitecturas, diseño de sistemas, y gestión de proyectos, soy un profesional digital completo."
+					preTitle="Sinópsis"
+					subTitle="Con un conjunto de habilidades que abarca desde UX&UI, desarrollo full stack, arquitecturas, diseño de sistemas y gestión de proyectos, soy un profesional completo."
 				/>
 				<section className={about.content}>
 					<div className={about.image}>
@@ -43,10 +43,10 @@ export default function About() {
 							containerClass={about.container}
 							iconClass={about.icon}
 							icon={[ 'fat', 'ear-listen' ]}
-							copy="Además de mi experiencia en diseño y desarrollo, también tengo fuertes habilidades de liderazgo, gestión del tiempo y multitarea, perfeccionadas a través de mi experiencia como freelance, fundador de un club estudiantil y voluntario. Fuera del trabajo, disfruto manteniéndome activo ejercitando en el gimnasio y deportes como el futbol. Estoy seguro de mi capacidad para aportar pasión y valor a cualquier proyecto."
+							copy="Además de mi experiencia en diseño y desarrollo, también tengo fuertes habilidades de liderazgo, gestión del tiempo y multitarea, perfeccionadas a través de mi experiencia como freelance, fundador de un club estudiantil y voluntario. Fuera del trabajo, disfruto manteniéndome activo ejercitando en el gimnasio y deportes como el fútbol. Estoy seguro de mi capacidad para aportar pasión y valor a cualquier proyecto."
 						/>
 						<BadgesBlock 
-							title="Si no sé como hacer algo, no me detengo hasta saberlo" 
+							title="Si no sé como hacer algo, no me detengo hasta saberlo." 
 							containerClass={about.container}
 							list={methods} 
 							fullContainer="fullContainer"
