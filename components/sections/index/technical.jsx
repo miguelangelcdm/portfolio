@@ -35,7 +35,7 @@ export default function Technical() {
 				<section className={`${about.content} ${about.container}`}>
 					<div className={about.copy}>
 						<CopyBlock 
-							title="Una vision más allá de la caja negra"
+							title="Una visión más allá de la caja negra"
 							icon={[ 'fat', 'chart-network' ]}
 							copy="Con una sólida base en diseño y desarrollo, aporto una perspectiva única a cada proyecto y estoy en constante aprendizaje y evolución para mantenerme al día con las últimas tendencias del sector."
 							iconClass={about.icon}

@@ -26,7 +26,12 @@
 		"secondary": {
 			"title": "LinkedIn",
 			"url": "https://www.linkedin.com/in/miguelangel-garay-b15178195/",
-			"leaveSite": "true"
+			"leaveSite": true
+		},
+		"phone": {
+		  "title": "+51 947744944",
+			"url": "callto:+51947744944",
+			"leaveSite": true
 		}
 	}
 }
