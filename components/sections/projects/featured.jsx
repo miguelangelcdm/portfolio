@@ -14,7 +14,7 @@ import content 		from '../../../content/projects/featured.json'
 export default function FeaturedProjects() {
 
 	return (
-		<Section classProp={css.hasBg}>	
+		<Section classProp={css.hasBg} id="projects">	
 			<Container spacing={'verticalXXXXLrg'}>
 				<SectionTitle
 					title="Proyectos Destacados"
