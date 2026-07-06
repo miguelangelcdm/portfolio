@@ -8,8 +8,8 @@ Este es el repositorio de mi sitio web y portafolio personal, diseñado y constr
 
 El proyecto está construido sobre las siguientes tecnologías y librerías clave:
 
-- **Framework**: [Next.js (v12.3)](https://nextjs.org/) (Pages Router)
-- **Librería de Interfaz**: [React (v18.2)](https://react.dev/)
+- **Framework**: [Next.js (v16.2.10)](https://nextjs.org/) (Pages Router)
+- **Librería de Interfaz**: [React (v19.0.0)](https://react.dev/)
 - **Estilos**: [Sass (SCSS)](https://sass-lang.com/) con estructura de módulos CSS (`.module.scss`) y variables de tokens de diseño.
 - **Animaciones**: [Framer Motion](https://www.framer.com/motion/) y `react-type-animation` para micro-interacciones dinámicas y de máquina de escribir en el Hero.
 - **Gestión de Datos**: Carga de contenido dinámico mediante archivos JSON locales (en `/content/`) para facilitar la edición sin tocar el código.
@@ -24,19 +24,10 @@ El proyecto está construido sobre las siguientes tecnologías y librerías clav
 ```text
 portfolio/
 ├── components/          # Componentes modulares reutilizables
-│   ├── blocks/          # Bloques visuales específicos (fondos, botones)
-│   ├── layout/          # Estructura del Layout global (Navbar, Footer, etc.)
-│   ├── sections/        # Secciones completas de las páginas (Hero, About, Technical, Career)
-│   ├── structure/       # Componentes estructurales de diseño (Section, Container)
-│   └── utils/           # Utilidades de renderizado de iconos, espaciados y temas
 ├── content/             # Archivos JSON con el contenido de la web (Textos, Proyectos, Configuración)
 ├── pages/               # Páginas y enrutamiento del Pages Router de Next.js
-│   ├── api/             # API Routes internas
-│   ├── articles/        # Páginas de artículos de blog
-│   ├── index.jsx        # Página principal (Home)
-│   └── _app.jsx         # Configuración y estilos globales de la aplicación
 ├── public/              # Recursos estáticos (Imágenes, currículum, etc.)
-├── styles/              # Archivos de estilos Sass (.scss)
+├── styles/              # Archivos de estilos Sass (.scss / .css)
 └── tests/               # Pruebas unitarias de componentes y secciones
 ```
 
@@ -96,10 +87,21 @@ Toda la información personal y los textos de la página están desacoplados del
 
 ---
 
+## 💎 Optimizaciones de Diseño e Implementación (Recordatorio 3 meses)
+
+Al realizar mantenimientos futuros, ten en cuenta los siguientes patrones implementados para resolver regresiones visuales:
+
+- **Estructura de Tarjetas de Carrera (`career.jsx`)**: Cada experiencia sigue una jerarquía estricta: un bloque principal `.company` (encabezado limpio, descripción breve y fecha) seguido de un bloque `.companyPositions` que envuelve las sub-tarjetas `.position` (cargos, viñetas de tareas y badges). Las sub-tarjetas se indentan a la derecha y tienen un fondo diferenciado.
+- **Transparencia en Mockups Animados (`poketme-optimized.webp`)**: Las grabaciones de pantalla de celulares a menudo contienen fondos blancos. Para evitar recuadros estéticamente molestos en el fondo oscuro del sitio, se filtran los píxeles blancos en un preprocesamiento por software para convertirlos en transparentes (Alpha = 0) antes de guardarse como WebP animado.
+- **Scroll Smooth y Anclas**: El Topbar navega de forma interna mediante hashes (`/#about`, `/#projects`, `/#experience`) combinados con la propiedad CSS `scroll-behavior: smooth` definida en `global.scss`. Los componentes estructurales heredan la propagación de props (`...rest`) para poder renderizar los atributos `id` correctamente.
+
+---
+
 ## 🗺️ Próximas Mejoras y Hoja de Ruta
 
 - [ ] **Migración a TypeScript**: Cambiar la base de código de JS/JSX a TS/TSX para mejorar la robustez y autocompletado del código.
-- [ ] **Actualización de Next.js**: Migrar de Next.js 12 (Pages Router) a Next.js 14/15 con **App Router** para aprovechar React Server Components y mejoras nativas de rendimiento.
+- [ ] **Actualización de Next.js**: Migrar de Next.js 16 (Pages Router) a la versión más reciente con **App Router** para aprovechar React Server Components y mejoras nativas de rendimiento.
 - [ ] **Integración de Base de Datos/CMS**: Reemplazar los archivos JSON locales por una base de datos liviana o un headless CMS como **Sanity.io** para una gestión de contenido gráfica y dinámica.
-- [ ] **Resolución de Vulnerabilidades**: Actualizar las dependencias obsoletas que contienen fallas de seguridad conocidas.
+- [x] **Resolución de Vulnerabilidades**: Actualizar las dependencias obsoletas que contienen fallas de seguridad conocidas (Vulnerabilidades resueltas a 0).
 - [ ] **Completar Integraciones**: Terminar de configurar el consumo de posts de Dev.to y HackerNoon mediante sus APIs correspondientes.
+
