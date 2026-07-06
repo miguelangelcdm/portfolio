@@ -21,7 +21,7 @@ import career from '../../../styles/sections/index/career.module.scss'
  */
 export default function Career() {
 	return (
-		<Section classProp={`${career.section} borderBottom`}>
+		<Section classProp={`${career.section} borderBottom`} id="experience">
 			<Container spacing={['verticalXXXLrg']}>
 				<SectionTitle
 					title="Experiencia"
