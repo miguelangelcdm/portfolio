@@ -105,11 +105,14 @@ export default function Navbar() {
 				// const hiddenAt 	= ( hero ) ? hero.getBoundingClientRect().bottom + window.scrollY : ( window.innerHeight / 2 )
 				const hiddenAt	= ( window.innerHeight / 2 )
 
+				// Disable scroll-hide behavior to keep navigation always visible at the top
+				/*
 				if ( window.scrollY > this.lastY && window.scrollY > hiddenAt && ! nC.contains( css.hidden ) ) {
 					nC.add( css.hidden )
 				} else if ( window.scrollY < this.lastY && nC.contains( css.hidden ) ) {
 					nC.remove( css.hidden )
 				}
+				*/
 
 				/**
 				 * At end of every scroll event update the previous position

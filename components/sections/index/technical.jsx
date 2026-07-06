@@ -1,5 +1,5 @@
 // Core packages
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 
 // Section structure
 import Section from '../../structure/section';

@@ -1,58 +1,105 @@
+# Portafolio Personal — Miguelangel Garay
 
-<div align="center">
-  <h1>andrewnelson.net | portfolio</h1>
-  <p></p>
-  <img src="https://img.shields.io/badge/stability-beta-blue.svg" alt="Experimental">
-  <img src="https://vercelbadge.vercel.app/api/atlamors/portfolio-theme" alt="Vercel">
-  <img src="https://therealsujitk-vercel-badge.vercel.app/?app=portfolio-theme-jqe0jhmif-atlamors.vercel.app" alt="Vercel Deployed">
-  <img src="https://img.shields.io/github/license/atlamors/portfolio-theme" alt="Liscence">
-  <br><br>
-</div>
+Este es el repositorio de mi sitio web y portafolio personal, diseñado y construido utilizando **Next.js** y **React**. Está optimizado para mostrar mis proyectos, habilidades, experiencia laboral y publicaciones de forma dinámica.
 
-<img src="https://www.andrewnelson.net/img/preview.png">
+---
 
-## Updates
-#### Dev Update — July 6th, 2023 🥰
-We have relocated to a beautiful home in the suburbs of Langely, BC. There has been a LOT of work unpacking, organizing, and landscaping to get this home perfect for our two toddlers! I am hoping to resume development of the theme in the next couple months!
+## 🛠️ Stack Tecnológico
 
-On a really interesting note, Webflow has launched a React component export tool. I am considering moving all component design and management over to Webflow for easier tooling for marketing teams and visual designers! 
-#### Dev Update — Feb 13th, 2023 [Updated: March 05th, 2023]
-Jest has been setup, but no progress on building tests has been made. Life is busy atm! 
-#### Dev Update — Feb 10th, 2023
-I am currently taking a short break in development of this theme. I am in the final phases of a job search, and getting ready to move into a bigger place to give some much needed room to my growing family! I am hoping to continue development before the end of next quarter!
+El proyecto está construido sobre las siguientes tecnologías y librerías clave:
 
-## This website is still being developed! 🥳
-The porftofolio application has currently hit the Beta phase and is ready to be forked if you are familiar with React and Next. The next release cycle will focus on a better DX—moving from local JSON to MongoDB, setting up Sanity for GUI page editing, Unit Testing with Jest, adding TypeScript, etc.
+- **Framework**: [Next.js (v12.3)](https://nextjs.org/) (Pages Router)
+- **Librería de Interfaz**: [React (v18.2)](https://react.dev/)
+- **Estilos**: [Sass (SCSS)](https://sass-lang.com/) con estructura de módulos CSS (`.module.scss`) y variables de tokens de diseño.
+- **Animaciones**: [Framer Motion](https://www.framer.com/motion/) y `react-type-animation` para micro-interacciones dinámicas y de máquina de escribir en el Hero.
+- **Gestión de Datos**: Carga de contenido dinámico mediante archivos JSON locales (en `/content/`) para facilitar la edición sin tocar el código.
+- **Iconografía**: [FontAwesome](https://fontawesome.com/) (Free/Pro icons) y [Devicon](https://devicon.dev/) para logos de tecnologías y herramientas.
+- **Pruebas**: Jest y React Testing Library para pruebas unitarias.
+- **Despliegue**: Optimizado para la plataforma de [Vercel](https://vercel.com/).
 
-#### Next & App Architecure
-- [ ] Next.js v13 : Waiting for /app/ folder to leave beta
-- [ ] Sanity.io
+---
 
-#### App Architecure & Design Systems
-- [ ] App\Systems\Margins : Continuing to develop Design Token System
-- [ ] App\Systems\Padding : Continuing to develop Design Token System
+## 📁 Estructura del Proyecto
 
-#### Pages
-- [x] Pages\About
-- [ ] Pages\Case Studies
-- [x] Pages\Articles : API options and connections for Dev.to and HackerNoon not complete
-- [x] Pages\Projects : Single project details page
+```text
+portfolio/
+├── components/          # Componentes modulares reutilizables
+│   ├── blocks/          # Bloques visuales específicos (fondos, botones)
+│   ├── layout/          # Estructura del Layout global (Navbar, Footer, etc.)
+│   ├── sections/        # Secciones completas de las páginas (Hero, About, Technical, Career)
+│   ├── structure/       # Componentes estructurales de diseño (Section, Container)
+│   └── utils/           # Utilidades de renderizado de iconos, espaciados y temas
+├── content/             # Archivos JSON con el contenido de la web (Textos, Proyectos, Configuración)
+├── pages/               # Páginas y enrutamiento del Pages Router de Next.js
+│   ├── api/             # API Routes internas
+│   ├── articles/        # Páginas de artículos de blog
+│   ├── index.jsx        # Página principal (Home)
+│   └── _app.jsx         # Configuración y estilos globales de la aplicación
+├── public/              # Recursos estáticos (Imágenes, currículum, etc.)
+├── styles/              # Archivos de estilos Sass (.scss)
+└── tests/               # Pruebas unitarias de componentes y secciones
+```
 
-#### Articles Page
-- [x] Pages\Articles\Medium\API
-- [ ] Pages\Articles\Dev.to\API
-- [ ] Pages\Articles\HackerNoon\API
+---
 
-#### Projects Page
-- [ ] Pages\Projects\Project : Single project details page
+## 🚀 Cómo Empezar
 
+Sigue estos pasos para instalar y ejecutar el proyecto en tu entorno local:
 
-## Please fork this repo! 🦄
+### Prerrequisitos
 
-Fork, Install, Editing, and Deploy instructions coming soon(ish)!
+Asegúrate de tener instalado [Node.js](https://nodejs.org/) (versión recomendada LTS, v18+).
 
-This is my first open-source contribution, and it was also a great oppoortunity for me to learn! 
+### 1. Instalar dependencias
 
-It is my hope that by sharing this project it can give others a chance to enjoy learning Nextjs (and have as much fun as I did), and hopefully brings value to people as a portfolio and networking tool!
+```bash
+npm install
+```
 
+### 2. Ejecutar en modo desarrollo
 
+Inicia el servidor de desarrollo local:
+
+```bash
+npm run dev
+```
+
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver el resultado.
+
+### 3. Construir para producción
+
+Compila el proyecto optimizado para producción:
+
+```bash
+npm run build
+```
+
+### 4. Ejecutar pruebas unitarias
+
+Para ejecutar la suite de pruebas con Jest:
+
+```bash
+npm run test
+```
+
+---
+
+## 📝 Personalización del Contenido
+
+Toda la información personal y los textos de la página están desacoplados del código para facilitar la edición rápida. Puedes modificar los archivos JSON dentro de la carpeta `/content/`:
+
+- **Ajustes Generales**: `/content/_settings.json` (Nombre, GitHub, Redes sociales).
+- **Sección Hero**: `/content/index/hero.json` (Presentación, títulos, redes, CV).
+- **Habilidades y Tecnologías**: `/content/index/technical.json`.
+- **Trayectoria Profesional**: `/content/index/career.json`.
+- **Proyectos Destacados**: `/content/projects/` y `/content/index/about.json`.
+
+---
+
+## 🗺️ Próximas Mejoras y Hoja de Ruta
+
+- [ ] **Migración a TypeScript**: Cambiar la base de código de JS/JSX a TS/TSX para mejorar la robustez y autocompletado del código.
+- [ ] **Actualización de Next.js**: Migrar de Next.js 12 (Pages Router) a Next.js 14/15 con **App Router** para aprovechar React Server Components y mejoras nativas de rendimiento.
+- [ ] **Integración de Base de Datos/CMS**: Reemplazar los archivos JSON locales por una base de datos liviana o un headless CMS como **Sanity.io** para una gestión de contenido gráfica y dinámica.
+- [ ] **Resolución de Vulnerabilidades**: Actualizar las dependencias obsoletas que contienen fallas de seguridad conocidas.
+- [ ] **Completar Integraciones**: Terminar de configurar el consumo de posts de Dev.to y HackerNoon mediante sus APIs correspondientes.
