@@ -1,6 +1,6 @@
 import Image from 'next/legacy/image'
 
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { m, useAnimation } from "framer-motion"
 import { useInView } from 'react-intersection-observer'
 
@@ -13,8 +13,6 @@ import content 		from '../../../content/projects/featured.json'
 export default function FeaturedProject({ content }, index) {
 
 	const { project, url, repo, descriptionTitle,description, stack, imageOptions, images } = content
-
-	const [isHovered, setIsHovered] = useState(false);
 
 	const controls = useAnimation();
 	const { ref, inView  } = useInView({
@@ -36,9 +34,7 @@ export default function FeaturedProject({ content }, index) {
 			variants={container}
 			initial={[ "rest", "hidden" ]}
 			whileHover="hover"
-			animate={controls}
-			onMouseEnter={() => setIsHovered(true)}
-			onMouseLeave={() => setIsHovered(false)} >
+			animate={controls} >
 			
 			<div className={css.details}>
 				<div className={css.projectHeader}>
@@ -63,14 +59,10 @@ export default function FeaturedProject({ content }, index) {
 				<span className={`${css.imageAnimationContainer}`}>
 					{ images.map( ({key, url, hover, h, w }, index) => {
 						hover = ( hover === 'left' ) ? hoverLeft : hoverRight
-						
-						// Optimize heavy gifs by loading static webp on idle and swapping to gif on hover
-						const displayUrl = (url.endsWith('.gif') && !isHovered) ? url.replace('.gif', '-static.webp') : url
-
 						return (
 							<m.div key={`${index}-${key}`} variants={item}>
 								<m.div variants={hover}>
-									<Image src={displayUrl} alt="x" height={h} width={w} />
+									<Image src={url} alt="x" height={h} width={w} />
 								</m.div>
 							</m.div>
 						)}

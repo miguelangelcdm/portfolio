@@ -34,7 +34,7 @@
 			{"key":"size",	"value":"large"}
 		],
 		"images": [
-			{ "key": "portfolio", "hover": "left", "h": "710", "w": "358",  "url": "/img/poketme.gif" }
+			{ "key": "portfolio", "hover": "left", "h": "710", "w": "358",  "url": "/img/poketme-optimized.webp" }
 		],
 		"stack": [
 			{ "key": "tailwindcss", "name": "Tailwind CSS", "type": "devicon" },

@@ -124,9 +124,11 @@
 			> span {
 				position: absolute !important;
 				right: 4rem;
+				width: calc(556px / 1.25) !important;
 	
 				img {
-					width: calc(556px / 1.25) !important;
+					width: 100% !important;
+					height: auto !important;
 				}
 			}
 		}
@@ -287,8 +289,10 @@
 		
 				> div > div {
 					> span {
+						width: calc(556px / 2) !important;
 						img {
-							width: calc(556px / 2) !important;
+							width: 100% !important;
+							height: auto !important;
 						}
 					}
 				}
