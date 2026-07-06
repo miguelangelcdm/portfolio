@@ -106,3 +106,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Local data and agent caches
+data/
+.gemini/

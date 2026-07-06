@@ -97,11 +97,54 @@ Al realizar mantenimientos futuros, ten en cuenta los siguientes patrones implem
 
 ---
 
+## 📊 Panel de Administración (Backoffice) & Métricas
+
+Se ha implementado un panel de administración (/backoffice) inspirado en la estética de **Nellavio** que permite hacer un seguimiento de las visitas y geolocalizaciones en tiempo real.
+
+### Características Clave:
+- **Seguimiento Geográfico**: El sitio obtiene la geolocalización del visitante (país, región, ciudad, coordenadas e IP pública) del lado del cliente a través de una petición de sesión única a `ipapi.co` y lo envía al endpoint de tracking (`/api/track`).
+- **Dashboard Interactivo**: Muestra contadores detallados (Visitas Totales, Visitantes Únicos, Ciudades Activas), una gráfica de línea/área SVG personalizada del historial de tráfico de los últimos 7 días y una lista/tabla filtrable de las visitas recientes.
+- **Seguridad**: Rutas protegidas mediante una cookie HttpOnly de sesión (`portfolio_session`) e interfaces de inicio de sesión exclusivas.
+
+### Configuración de Variables de Entorno (Render / Local):
+Para personalizar las credenciales y asegurar la persistencia de datos en Render, puedes configurar las siguientes variables de entorno:
+
+- **`DASHBOARD_USERNAME`**: El nombre de usuario para iniciar sesión (por defecto: `admin`).
+- **`DASHBOARD_PASSWORD`**: La contraseña para iniciar sesión (por defecto: `portfolio2026`).
+- **`VISITS_DATA_PATH`**: Ruta absoluta donde se guardará el archivo JSON con el registro de visitas.
+  - *Recomendación Render*: Si deseas persistencia total tras redespliegues en Render, crea y monta un **Persistent Disk** (ej. en `/var/data`) y define esta variable como `/var/data/visits.json`. Si no se define, se utilizará `./data/visits.json` (almacenamiento efímero dentro del contenedor).
+
+### 📈 Integración con Umami Analytics (Supabase + Render)
+Si deseas una solución de analíticas autohospedada más avanzada, el sitio ya viene pre-configurado para soportar **Umami**.
+
+#### 1. Crear Base de Datos en Supabase
+1. Ve a [Supabase](https://supabase.com/) y crea un nuevo proyecto.
+2. Ve a **Project Settings > Database** y copia el **Connection String** (en formato URI, ej. `postgresql://postgres:[PASSWORD]@db.xxxx.supabase.co:5432/postgres`).
+
+#### 2. Desplegar Umami en Render
+1. Crea un nuevo **Web Service** en Render conectando el repositorio oficial de [Umami](https://github.com/umami-software/umami).
+2. Añade las siguientes variables de entorno en Render:
+   - `DATABASE_URL`: Pega la cadena de conexión de Supabase copiada anteriormente.
+   - `APP_SECRET`: Una cadena aleatoria larga para firmar sesiones de Umami.
+3. Despliega el servicio. Tras completarse, Umami estará disponible en tu URL de Render (ej. `https://mi-umami.onrender.com`). Inicia sesión (usuario por defecto: `admin`, clave: `umami`) y cambia tu contraseña.
+4. Añade tu sitio web en la sección de configuración de Umami para obtener tu **Website ID**.
+
+#### 3. Activar en tu Portafolio
+En la configuración de Render de este portafolio, simplemente añade estas dos variables de entorno:
+- **`NEXT_PUBLIC_UMAMI_URL`**: La URL de tu servicio de Umami (ej. `https://mi-umami.onrender.com`).
+- **`NEXT_PUBLIC_UMAMI_WEBSITE_ID`**: El Website ID provisto por Umami.
+
+El script de rastreo se inyectará automáticamente y empezará a enviar estadísticas de visitas directamente a tu base de datos de Supabase.
+
+---
+
 ## 🗺️ Próximas Mejoras y Hoja de Ruta
 
+- [x] **Panel de Administración**: Implementado backoffice para visualización de visitas, ubicaciones y métricas en tiempo real.
 - [ ] **Migración a TypeScript**: Cambiar la base de código de JS/JSX a TS/TSX para mejorar la robustez y autocompletado del código.
 - [ ] **Actualización de Next.js**: Migrar de Next.js 16 (Pages Router) a la versión más reciente con **App Router** para aprovechar React Server Components y mejoras nativas de rendimiento.
 - [ ] **Integración de Base de Datos/CMS**: Reemplazar los archivos JSON locales por una base de datos liviana o un headless CMS como **Sanity.io** para una gestión de contenido gráfica y dinámica.
 - [x] **Resolución de Vulnerabilidades**: Actualizar las dependencias obsoletas que contienen fallas de seguridad conocidas (Vulnerabilidades resueltas a 0).
 - [ ] **Completar Integraciones**: Terminar de configurar el consumo de posts de Dev.to y HackerNoon mediante sus APIs correspondientes.
+
 
